@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SmartLight.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout>
+            <Label x:Name="StatusLabel" Text="Status: Disconnected"
+                   FontSize="30"
+                   Margin="50,5"/>
+            <Label x:Name="Light1StatusLabel"
+                   Margin="50,5"
+                   Text="LED 1: Unknown"
+                   FontSize="30"/>
+            <Label x:Name="Light2StatusLabel"
+                   Margin="50,5"
+                   Text="Đèn 2: Unknown"
+                   FontSize="30"/>
+            <Button Text="ON/OFF LED 1"
+                    Margin="50,10"
+                    FontSize="20"
+                    Clicked="OnToggleLight1Clicked" />
+            <Button Text="ON/OFF LED 2"
+                    Margin="50,10"
+                    FontSize="20"
+                    Clicked="OnToggleLight2Clicked" />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
